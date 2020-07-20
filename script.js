@@ -13,3 +13,7 @@ $("button").on("click", function (e) {
         }
     }
 });
+
+var questions = [
+    
+]
