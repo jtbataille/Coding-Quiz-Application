@@ -30,6 +30,8 @@ header {
 button {
     text-align: center;
     margin-top: 15px !important;
+    background-color: purple !important;
+    border: purple !important;
 }
 
 * {

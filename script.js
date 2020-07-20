@@ -15,5 +15,11 @@ $("button").on("click", function (e) {
 });
 
 var questions = [
-    
-]
+    new Question("The answer to this question is A.", ["A", "B", "C", "D"], "A"),
+    new Question("The answer to this question is B.", ["A", "B", "C", "D"], "B"),
+    new Question("The answer to this question is C.", ["A", "B", "C", "D"], "C"),
+    new Question("The answer to this question is D.", ["A", "B", "C", "D"], "D"),
+    new Question("The answer to this question is A.", ["A", "B", "C", "D"], "A"),
+];
+
+localStorage.getItem
