@@ -35,7 +35,7 @@ button {
 }
 
 * {
-    background-color: olive;
+    background-color: grey;
 }
 
 #btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {

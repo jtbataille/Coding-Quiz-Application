@@ -2,12 +2,14 @@
 <html lang="en-us">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework 4</title>
     
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 
 <body>
@@ -16,21 +18,41 @@
         <spam id="countdown">Time: 75</span>
     </header>
     
-    <h1>Coding Quiz</h1>
+     <main class="mainContainer">
+        
+        <div class="explanationPage">
+            <h1>Coding Quiz</h1>
 
-    <p class="second">Welcome to you coding quiz! After clicking on the "START QUIZ" button below, you will be given a multiple choice question regarding basic coding knowledge. After each submitted answer, you will be prompted with a new question--for a total of 5 questions. At the end, you will be shown the high scores for the quiz, and you can take it again to beat your previous scores! BE WARNED: There's a timer, so you'll have to play smart!</p>
+            <p class="second">Welcome to you coding quiz! After clicking on the "START QUIZ" button below, you will be given a multiple choice question regarding basic coding knowledge. After each submitted answer, you will be prompted with a new question--for a total of 5 questions. At the end, you will be shown the high scores for the quiz, and you can take it again to beat your previous scores! BE WARNED: There's a timer, so you'll have to play smart!</p>
 
-    <div id="questionList">
-        <button id="btn0"><span id="choice0"></span></button>
-        <button id="btn1"><span id="choice1"></span></button>
-        <button id="btn2"><span id="choice2"></span></button>
-        <button id="btn3"><span id="choice3"></span></button>
-    </div>
-    
-    <div class="text-center">
-        <button type="button" class="btn btn-primary btn-lg fa fa-check-circle">  Start Quiz</button>
-    </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-primary btn-lg fa fa-check-circle">  Start Quiz</button>
+            </div>
+
+        </div>
+
+        <div class="questionPage">
+            <h2 id="theQuestionItself"></h2>
+            <div id="questionList">
+                <ul>
+                    <li><button id="btn0"><span id="choice0"></span></button></li>
+                    <li><button id="btn1"><span id="choice1"></span></button></li>
+                    <li><button id="btn2"><span id="choice2"></span></button></li>
+                    <li><button id="btn3"><span id="choice3"></span></button></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="highScorePage"></div>
+
+    </main>
     
     <script type="text/javascript" src="script.js"></script>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </body>
 </html>
