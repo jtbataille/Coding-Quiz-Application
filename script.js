@@ -1,3 +1,21 @@
+// Variables
+
+var highScore = document.getElementsByClassName("first");
+var timer = document.getElementById("countdown");
+var startButton = document.getElementById("startButton");
+
+// Variables for questionPage
+var questionItself = document.getElementById("theQuestionItself");
+var firstChoice = document.getElementById("btn0");
+var secondChoice = document.getElementById("btn1");
+var thirdChoice = document.getElementById("btn2");
+var fourthChoice = document.getElementById("btn3");
+
+// Variables for each page of the document
+var explanationPage = document.getElementsByClassName("explanationPage");
+var questionPage = document.getElementsByClassName("questionPage");
+var highScorePage = document.getElementsByClassName("highScorePage");
+
 $("button").on("click", function (e) {
     var timeLeft = 75;
     var elem = document.getElementById("countdown");
