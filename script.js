@@ -15,6 +15,7 @@ var explanationPage = document.getElementsByClassName("explanationPage");
 var questionPage = document.getElementsByClassName("questionPage");
 var highScorePage = document.getElementsByClassName("highScorePage");
 
+// onclick function for the timer
 startButton.onclick = function (e) {
     var timeLeft = 75;
     var elem = document.getElementById("countdown");
@@ -59,6 +60,7 @@ var questions = [
     }
 ];
 
+// other divs will be hidden when the document loads in, only showing the explanationPage
 document.addEventListener("DOMContentLoaded", function openingPage() {
     $(".explanationPage").show();
     $(".questionPage").hide();
