@@ -1,5 +1,4 @@
 // Variables
-
 var highScore = document.getElementsByClassName("first");
 var timer = document.getElementById("countdown");
 var startButton = document.getElementById("startButton");
@@ -16,7 +15,7 @@ var explanationPage = document.getElementsByClassName("explanationPage");
 var questionPage = document.getElementsByClassName("questionPage");
 var highScorePage = document.getElementsByClassName("highScorePage");
 
-$("button").on("click", function (e) {
+startButton.onclick = function (e) {
     var timeLeft = 75;
     var elem = document.getElementById("countdown");
     var timerId = setInterval(countdown, 1000);
@@ -24,20 +23,46 @@ $("button").on("click", function (e) {
     function countdown() {
         if (timeLeft == -1) {
             clearTimeout(timerId);
-            doSomething();
         } else {
             elem.innerHTML = "Time: " + timeLeft;
             timeLeft--;
         }
     }
-});
+};
 
+// Quiz question array to go into the questionPage
 var questions = [
-    new Question("The answer to this question is A.", ["A", "B", "C", "D"], "A"),
-    new Question("The answer to this question is B.", ["A", "B", "C", "D"], "B"),
-    new Question("The answer to this question is C.", ["A", "B", "C", "D"], "C"),
-    new Question("The answer to this question is D.", ["A", "B", "C", "D"], "D"),
-    new Question("The answer to this question is A.", ["A", "B", "C", "D"], "A"),
+    {
+        question: "The answer to this question is A.",
+        choices: ["A", "B", "C", "D"],
+        answer: 0
+    },
+    {
+        question: "The answer to this question is B.",
+        choices: ["A", "B", "C", "D"],
+        answer: 1
+    },
+    {
+        question: "The answer to this question is C.",
+        choices: ["A", "B", "C", "D"],
+        answer: 2
+    },
+    {
+        question: "The answer to this question is D.",
+        choices: ["A", "B", "C", "D"],
+        answer: 3
+    },
+    {
+        question: "The answer to this question is A.",
+        choices: ["A", "B", "C", "D"],
+        answer: 0
+    }
 ];
+
+document.addEventListener("DOMContentLoaded", function openingPage() {
+    $(".explanationPage").show();
+    $(".questionPage").hide();
+    $(".highScorePage").hide();
+});
 
 localStorage.getItem
