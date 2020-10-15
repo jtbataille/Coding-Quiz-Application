@@ -22,7 +22,7 @@ HTML, CSS, JavaScript
 ![WHat is this](demo/appDemo.png)
 
 ## Deployed Application Link
-* [Test your skills here!](https://jtbataille.github.io/JSQuizHW4/)
+* [Test your skills here!](https://jtbataille.github.io/Coding-Quiz-Application/)
 
 ## Contact Information
 * Jarrod Bataille
